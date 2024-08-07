@@ -1,0 +1,114 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+}
+
+.menu {
+    background-color: #f7fcb9;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #f7fcb9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(61, 58, 255, 0.1);
+    border: 5px solid #f7fcb9;
+    text-align: justify;
+    font-family: 'Monserrat', sans-serif;
+}
+
+.container1 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+    border: 5px solid #234e4e;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #234e4e;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f7fcb9;
+}
+
+.header-image {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.header-img {
+    max-width: 150px; 
+    height: auto; 
+}
+
+.footer {
+    background-color: #234e4e; 
+    text-align: center; 
+    padding: 10px 0; 
+    font-size: 14px; 
+    color: #000000; 
+    border-top: 1px solid #f7fcb9; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.footer p {
+    margin: 0; 
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container, .container1 {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .menu a {
+        padding: 8px 10px;
+        margin: 3px;
+    }
+
+    button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}

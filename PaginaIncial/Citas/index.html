@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Citas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Agendar Cita</h2>
+        <form id="appointmentForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="tipo_cita">Tipo de Cita:</label>
+            <select id="tipo_cita" name="tipo_cita" required>
+                <option value="">Seleccione el tipo de cita</option>
+                <option value="Presencial">Presencial</option>
+                <option value="Virtual">Virtual</option>
+            </select>
+            
+            <div id="presencial-options" class="hidden">
+                <label for="fecha_presencial">Fecha:</label>
+                <select id="fecha_presencial" name="fecha_presencial">
+                    <option value="2024-08-12">Lunes 12 de Agosto</option>
+                    <option value="2024-08-14">Miércoles 14 de Agosto</option>
+                    <option value="2024-08-17">Sábado 17 de Agosto</option>
+                    <option value="2024-08-19">Lunes 19 de Agosto</option>
+                    <option value="2024-08-21">Miércoles 21 de Agosto</option>
+                    <option value="2024-08-24">Sábado 24 de Agosto</option>
+                    <option value="2024-08-26">Lunes 26 de Agosto</option>
+                    <option value="2024-08-28">Miércoles 28 de Agosto</option>
+                    <option value="2024-08-31">Sábado 31 de Agosto</option>
+                    <option value="2024-09-02">Lunes 02 de Agosto</option>
+                    <option value="2024-09-04">Miércoles 04 de Agosto</option>
+                    <option value="2024-09-07">Sábado 07 de Agosto</option>
+                    <option value="2024-09-09">Lunes 09 de Agosto</option>
+                    <option value="2024-09-11">Miércoles 11 de Agosto</option>
+                    <option value="2024-09-14">Sábado 14 de Agosto</option>
+                    <option value="2024-09-16">Lunes 16 de Agosto</option>
+                    <option value="2024-09-18">Miércoles 18 de Agosto</option>
+                    <option value="2024-09-21">Sábado 21 de Agosto</option>
+                    <option value="2024-09-23">Lunes 23 de Agosto</option>
+                    <option value="2024-09-25">Miércoles 25 de Agosto</option>
+                    <option value="2024-09-28">Sábado 28 de Agosto</option>
+                    <option value="2024-09-30">Lunes 30 de Agosto</option>
+                    <!-- Añadir todas las fechas de lunes y miércoles hasta el 30 de septiembre -->
+                </select>
+                
+                <label for="hora_presencial">Hora:</label>
+                <select id="hora_presencial" name="hora_presencial">
+                    <option value="11:30-13:00">Lunes o Miércoles 11:30 - 13:00</option>
+                    <option value="13:00-14:30">Lunes o Miércoles 13:00 - 14:30</option>
+                    <option value="07:30-09:00">Sábado 07:30 - 09:00</option>
+                </select>
+            </div>
+            
+            <div id="virtual-options" class="hidden">
+                <label for="fecha_virtual">Fecha:</label>
+                <select id="fecha_virtual" name="fecha_virtual">
+                    <option value="2024-08-12">Lunes 12 de Agosto</option>
+                    <option value="2024-08-15">Jueves 15 de Agosto</option>
+                    <option value="2024-08-19">Lunes 19 de Agosto</option>
+                    <option value="2024-08-22">Jueves 22 de Agosto</option>
+                    <option value="2024-08-26">Lunes 26 de Agosto</option>
+                    <option value="2024-08-29">Jueves 29 de Agosto</option>
+                    <option value="2024-09-02">Lunes 02 de Agosto</option>
+                    <option value="2024-09-05">Jueves 05 de Agosto</option>
+                    <option value="2024-09-09">Lunes 09 de Agosto</option>
+                    <option value="2024-09-12">Jueves 12 de Agosto</option>
+                    <option value="2024-09-16">Lunes 16 de Agosto</option>
+                    <option value="2024-09-19">Jueves 19 de Agosto</option>
+                    <option value="2024-09-23">Lunes 23 de Agosto</option>
+                    <option value="2024-09-26">Jueves 26 de Agosto</option>
+                    <option value="2024-09-30">Lunes 30 de Agosto</option>
+                    <!-- Añadir todas las fechas de jueves y lunes hasta el 30 de septiembre -->
+                </select>
+                
+                <label for="hora_virtual">Hora:</label>
+                <select id="hora_virtual" name="hora_virtual">
+                    <option value="20:00-21:00">Lunes 20:00 - 21:00</option>
+                    <option value="21:00-22:00">Lunes 21:00 - 22:00</option>
+                    <option value="09:00-10:00">Jueves 09:00 - 10:00</option>
+                    <option value="10:00-11:00">Jueves 10:00 - 11:00</option>
+                    <option value="11:00-12:00">Jueves 11:00 - 12:00</option>
+                    <option value="12:00-13:00">Jueves 12:00 - 13:00</option>
+                    <option value="13:00-14:00">Jueves 13:00 - 14:00</option>
+                </select>
+            </div>
+            
+            <button type="submit">Agendar Cita</button>
+            <a href="../Sesion/index.html" class="btn-sesion">Regresar</a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión/Registrar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header-image">
+        <a href="https://www.facebook.com/amorsinmedidassaludsinlimites?mibextid=ZbWKwL" target="_blank">
+            <img src="../../img/logo Sin medida editable-02.png" alt="Encabezado de Nutrición" class="header-img">
+        </a>
+    </div>
+    
+    <div class="menu">
+        <a href="../../inicio.html">Inicio</a>
+        <a href="../RedesSociales/index.html"><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i></a>
+        <a href="../Quines somos/index.html">¿Quiénes somos?</a>
+        <a href="../Consejos/index.html">Consejos para tu bienestar</a>
+        <a href="../Articulos/index.html">Artículos de interés</a>
+        <a href="../Cuentanos/index.html">Experiencias</a>
+        <a href="index.html">Iniciar sesión/Registrar</a>
+    </div>
+
+    <div class="container">
+        <div id="loginSection">
+            <div class="form-toggle">
+                <button id="showLogin" class="btn btn-primary">Iniciar Sesión</button>
+                <button id="showRegister" class="btn btn-secondary">Registrar</button>
+            </div>
+            
+            <div id="loginForm" class="form-container">
+                <div class="row">
+                    <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                        <div class="panel border bg-white">
+                            <div class="panel-heading">
+                                <h3 class="pt-3 font-weight-bold">Iniciar Sesión</h3>
+                            </div>
+                            <div class="panel-body p-3">
+                                <form id="loginFormInner">
+                                    <div class="form-group py-2">
+                                        <label for="loginUsername">Nombre de usuario o Email:</label>
+                                        <input type="text" id="loginUsername" class="form-control" placeholder="Nombre de usuario o Email" required>
+                                    </div>
+                                    <div class="form-group py-1 pb-2">
+                                        <label for="loginPassword">Contraseña:</label>
+                                        <div class="input-field">
+                                            <span class="fas fa-lock px-2"></span>
+                                            <input type="password" id="loginPassword" class="form-control" placeholder="Contraseña" required>
+                                            <button type="button" class="btn bg-white text-muted"> <span class="far fa-eye-slash"></span> </button>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block mt-3">Iniciar Sesión</button>
+                                    <div class="text-center pt-4 text-muted">¿No tienes una cuenta? <a href="#" id="showRegisterLink">Regístrate</a> </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="registerForm" class="form-container">
+                <div class="row">
+                    <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                        <div class="panel border bg-white">
+                            <div class="panel-heading">
+                                <h3 class="pt-3 font-weight-bold">Registrar</h3>
+                            </div>
+                            <div class="panel-body p-3">
+                                <form id="registerFormInner">
+                                    <div class="form-group">
+                                        <label for="registerNombre">Nombre:</label>
+                                        <input type="text" id="registerNombre" class="form-control" name="nombre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="registerApellidos">Apellidos:</label>
+                                        <input type="text" id="registerApellidos" class="form-control" name="apellidos" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="registerEdad">Edad:</label>
+                                        <input type="number" id="registerEdad" class="form-control" name="edad" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="registerCorreo">Correo:</label>
+                                        <input type="email" id="registerCorreo" class="form-control" name="correo" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="registerNumeroTelefono">Número de Teléfono:</label>
+                                        <input type="text" id="registerNumeroTelefono" class="form-control" name="numero_telefono" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="registerPassword">Contraseña:</label>
+                                        <input type="password" id="registerPassword" class="form-control" name="password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="registerImagen">Imagen de Perfil:</label>
+                                        <input type="file" id="registerImagen" class="form-control-file" name="imagen">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block mt-3">Registrar</button>
+                                    <div class="text-center pt-4 text-muted">¿Ya tienes una cuenta? <a href="#" id="showLoginLink">Inicia Sesión</a> </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="profileButton" class="btn btn-primary" style="display: none;">Ver Perfil</button>
+        <button id="logoutButton" class="btn btn-danger" style="display: none;">Cerrar Sesión</button>
+    </div>
+    
+    <div class="full-height">
+        <div id="agendaButton" class="button-container">
+            <h2>¿Quieres agendar una cita?</h2>
+            <button id="agendaButton" class="btn btn-primary" style="display: none;">Citas</button>
+        </div>
+    </div>
+
+    <script src="Inici/inicio.js"></script>
+    <script src="Regis/registro.js"></script>
+
+    <div class="footer">
+        <p>&copy; 2024 UAEMex. 16 de agosto de 2023.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
