@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const multer = require('multer');
-const connectDB = require('./database'); // Importar la función connectDB desde db.js
+const connectDB = require('./database'); // Importar la función connectDB desde database.js
 const authRoutes = require('./routes/auth'); 
 
 const app = express();
