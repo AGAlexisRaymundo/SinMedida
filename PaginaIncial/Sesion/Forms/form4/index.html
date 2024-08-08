@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Experiencia Personal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de Experiencia Personal</h1>
+    <form id="experiencia-form" name="experiencia-form">
+        <label for="identificador">Identificador:</label>
+        <p>No olvides de guardar este codigo ya se se te pedira al momento de hacer citas</p>
+        <input type="text" id="identificador" name="identificador" readonly>
+        <table>
+            <thead>
+                <tr>
+                    <th>Instrucciones: Usando la escala del 1 al 5 por favor indica lo que realmente refleja tu propia EXPERIENCIA</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Respeto mi cuerpo</td>
+                    <td><input type="radio" name="respeto_mi_cuerpo" value="1" required></td>
+                    <td><input type="radio" name="respeto_mi_cuerpo" value="2"></td>
+                    <td><input type="radio" name="respeto_mi_cuerpo" value="3"></td>
+                    <td><input type="radio" name="respeto_mi_cuerpo" value="4"></td>
+                    <td><input type="radio" name="respeto_mi_cuerpo" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Me siento bien con mi cuerpo</td>
+                    <td><input type="radio" name="me_siento_bien_con_mi_cuerpo" value="1" required></td>
+                    <td><input type="radio" name="me_siento_bien_con_mi_cuerpo" value="2"></td>
+                    <td><input type="radio" name="me_siento_bien_con_mi_cuerpo" value="3"></td>
+                    <td><input type="radio" name="me_siento_bien_con_mi_cuerpo" value="4"></td>
+                    <td><input type="radio" name="me_siento_bien_con_mi_cuerpo" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Siento que mi cuerpo tiene al menos algunas cualidades buenas</td>
+                    <td><input type="radio" name="siento_que_mi_cuerpo_tiene_buenas_cualidades" value="1" required></td>
+                    <td><input type="radio" name="siento_que_mi_cuerpo_tiene_buenas_cualidades" value="2"></td>
+                    <td><input type="radio" name="siento_que_mi_cuerpo_tiene_buenas_cualidades" value="3"></td>
+                    <td><input type="radio" name="siento_que_mi_cuerpo_tiene_buenas_cualidades" value="4"></td>
+                    <td><input type="radio" name="siento_que_mi_cuerpo_tiene_buenas_cualidades" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Tengo una actitud positiva hacia mi cuerpo</td>
+                    <td><input type="radio" name="actitud_positiva_hacia_mi_cuerpo" value="1" required></td>
+                    <td><input type="radio" name="actitud_positiva_hacia_mi_cuerpo" value="2"></td>
+                    <td><input type="radio" name="actitud_positiva_hacia_mi_cuerpo" value="3"></td>
+                    <td><input type="radio" name="actitud_positiva_hacia_mi_cuerpo" value="4"></td>
+                    <td><input type="radio" name="actitud_positiva_hacia_mi_cuerpo" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Estoy atento/a a las necesidades de mi cuerpo</td>
+                    <td><input type="radio" name="atento_a_las_necesidades_de_mi_cuerpo" value="1" required></td>
+                    <td><input type="radio" name="atento_a_las_necesidades_de_mi_cuerpo" value="2"></td>
+                    <td><input type="radio" name="atento_a_las_necesidades_de_mi_cuerpo" value="3"></td>
+                    <td><input type="radio" name="atento_a_las_necesidades_de_mi_cuerpo" value="4"></td>
+                    <td><input type="radio" name="atento_a_las_necesidades_de_mi_cuerpo" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Siento amor por mi cuerpo</td>
+                    <td><input type="radio" name="siento_amor_por_mi_cuerpo" value="1" required></td>
+                    <td><input type="radio" name="siento_amor_por_mi_cuerpo" value="2"></td>
+                    <td><input type="radio" name="siento_amor_por_mi_cuerpo" value="3"></td>
+                    <td><input type="radio" name="siento_amor_por_mi_cuerpo" value="4"></td>
+                    <td><input type="radio" name="siento_amor_por_mi_cuerpo" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Valoro las características únicas y diferentes de mi cuerpo</td>
+                    <td><input type="radio" name="valoro_caracteristicas_unicas_de_mi_cuerpo" value="1" required></td>
+                    <td><input type="radio" name="valoro_caracteristicas_unicas_de_mi_cuerpo" value="2"></td>
+                    <td><input type="radio" name="valoro_caracteristicas_unicas_de_mi_cuerpo" value="3"></td>
+                    <td><input type="radio" name="valoro_caracteristicas_unicas_de_mi_cuerpo" value="4"></td>
+                    <td><input type="radio" name="valoro_caracteristicas_unicas_de_mi_cuerpo" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Mi comportamiento refleja una actitud positiva con respecto a mi cuerpo (por ejemplo: voy con la cabeza alta y sonrío)</td>
+                    <td><input type="radio" name="comportamiento_refleja_actitud_positiva" value="1" required></td>
+                    <td><input type="radio" name="comportamiento_refleja_actitud_positiva" value="2"></td>
+                    <td><input type="radio" name="comportamiento_refleja_actitud_positiva" value="3"></td>
+                    <td><input type="radio" name="comportamiento_refleja_actitud_positiva" value="4"></td>
+                    <td><input type="radio" name="comportamiento_refleja_actitud_positiva" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Me siento a gusto con mi cuerpo</td>
+                    <td><input type="radio" name="me_siento_a_gusto_con_mi_cuerpo" value="1" required></td>
+                    <td><input type="radio" name="me_siento_a_gusto_con_mi_cuerpo" value="2"></td>
+                    <td><input type="radio" name="me_siento_a_gusto_con_mi_cuerpo" value="3"></td>
+                    <td><input type="radio" name="me_siento_a_gusto_con_mi_cuerpo" value="4"></td>
+                    <td><input type="radio" name="me_siento_a_gusto_con_mi_cuerpo" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Me siento guapo/a aunque sea diferente de las imágenes de gente atractiva que aparecen en los medios de comunicación (por ejemplo: modelos, actrices/actores)</td>
+                    <td><input type="radio" name="me_siento_guapo_aunque_diferente_de_modelos" value="1" required></td>
+                    <td><input type="radio" name="me_siento_guapo_aunque_diferente_de_modelos" value="2"></td>
+                    <td><input type="radio" name="me_siento_guapo_aunque_diferente_de_modelos" value="3"></td>
+                    <td><input type="radio" name="me_siento_guapo_aunque_diferente_de_modelos" value="4"></td>
+                    <td><input type="radio" name="me_siento_guapo_aunque_diferente_de_modelos" value="5"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
