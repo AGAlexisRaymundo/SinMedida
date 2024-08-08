@@ -1,4 +1,10 @@
 {
+  "name": "my-node-app",
+  "version": "1.0.0",
+  "main": "inicio.html",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "axios": "^1.7.2",
@@ -13,7 +19,6 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.11.0",
     "path": "^0.12.7"
-    
   },
   "license": "MIT"
 }
